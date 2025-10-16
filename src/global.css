@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wrapper {
+    padding: 1px !important;
+    margin: 1px !important;
+}
+
+.bg-color-dayname{
+    background-color: #757575;
+}
+
+.flex-item-line {
+    /* 선을 채울 요소 */
+    flex-grow: 1; /* 남은 공간 모두 차지 */
+    border-bottom: 1px solid black; /* 선 스타일 지정 */
+    margin: 0 5px; /* 텍스트와 선 사이의 간격 */
+}

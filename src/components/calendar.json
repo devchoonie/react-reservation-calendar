@@ -1,0 +1,9 @@
+{
+
+     "dayArray" : ["일","월","화","수","목","금","토"],
+     "dayArrayColor" : "bg-color-dayname",
+    "alerts" : {
+        "differentMsg" : "같은 이름을 선택해야 합니다",
+        "selectErrorMsg" : "시작날짜보다 이전입니다"
+    }
+}
