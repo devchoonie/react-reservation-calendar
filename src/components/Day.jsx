@@ -1,13 +1,23 @@
 
 const Day = ({dateProps, selectProps, roomProps, seletedStartProps, eventProps}) => {
-  
+  // 해당 컴포넌트가 가지고 있는 년월일 정보, currentMonth는 현재월을 표시
+  // The year, month, and day information held by the component; currentMonth indicates the current month
   const {year, currentMonth, month, day} = dateProps;
+  // 이 컴포넌트가 선택된건지, 마지막날짜인지, 선택한 room 값
+  // Whether this component is selected, whether it is the last date, and the value of the selected room
   const {isSelected, isSelectedLastDay, roomId} = selectProps;
+  // Day 컴포넌트마다 세팅하기 위한 room 값
+  // The room value to be set for each Day component
   const { roomArr } = roomProps;
+  // 시작날짜 클릭 시 선택된 date정보
+  // The selected date information when the start date is clicked
   const {sYear, sMonth, sDay, sRoom} = seletedStartProps; 
+  // Calendar컴포넌트에 정의된 events를 이 컴포넌트에서 사용하기 위함
+  // To use the events defined in the Calendar component within this component
   const {roomClickEvent, cancelClickEvent} = eventProps;
   
-  // 최초 날짜 클릭 시 색상변경
+  // 시작 날짜 클릭 시 색상변경
+  // Change color when the start date is clicked
   const isSelectedStart = year == sYear && month == sMonth && day == sDay; 
 
   return (
